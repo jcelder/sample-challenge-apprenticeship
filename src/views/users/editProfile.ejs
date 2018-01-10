@@ -1,0 +1,21 @@
+<% include ../partials/header %>
+
+<table>
+  <tr>
+    <td>Email:</td>
+    <td><input type="text" name="email" id="email" value='<%= user.email %>'></td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td><input type="text" name="name" id="name"value='<%= user.name %>'></td>
+  </tr>
+  <tr>
+    <td>
+      <button id="btn--submit" data-id='<%= user.user_id %>'>Submit</button>
+    </td>
+  </tr>
+</table>
+<div id="message"></div>
+<script type="text/javascript" src="/editUserScript.js"></script>
+
+<% include ../partials/footer %>

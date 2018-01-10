@@ -1,5 +1,13 @@
 <% include ../partials/header %>
 
-<!-- insert code here -->
+<form action="/sign-up" method="POST">
+<input type="text" name="email">
+<input type="text" name="name">
+<input type="password" name="password">
+<input type="submit"> 
+</form>
+<% if (locals.error) { %>
+  <div id="error"><%= error %></div>
+<% } %>
 
 <% include ../partials/footer %>

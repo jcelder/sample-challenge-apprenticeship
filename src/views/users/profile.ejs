@@ -1,5 +1,15 @@
 <% include ../partials/header %>
 
-<!-- insert code here -->
+<table>
+  <tr>
+    <td>Email:</td>
+    <td><%= user.email %></td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td><%= user.name %></td>
+  </tr>
+</table>
+<a href='/users/<%= user.user_id %>/edit'><button>Edit</button></a>
 
 <% include ../partials/footer %>

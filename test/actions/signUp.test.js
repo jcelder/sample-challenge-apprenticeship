@@ -4,7 +4,14 @@ import { signUp } from '../../src/actions';
 
 describe('function signUp ', () => {
   it('should create a new row in the users table', () => {
-    // TODO: FIXME and write a real test
-    expect(1).to.equal(2)
+    const testUser = {
+      email: 'test@test.com',
+      name: 'test',
+      password: 'test'
+    }
+    return signUp(testUser)
+      .then((userId) => {
+        expect(userId.user_id).to.equal(1)
+      })
   })
 })
