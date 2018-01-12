@@ -2,5 +2,10 @@
 
 <h1><%= album.title %></h1>
 <em>by <%= album.artist %></em>
-
+<% if (check.success === 'true') { %>
+<button id = "btn-like" data-id="<%= album.id%>" class="btn--liked" disabled>Likes: <%= likes.count %></button>
+<% } else { %>
+<button id = "btn-like" data-id="<%= album.id%>"><%= likes.count %></button>
+<% } %>
+<script src="../albumScript.js"></script>
 <% include ../partials/footer %>
