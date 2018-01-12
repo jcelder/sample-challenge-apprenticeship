@@ -95,3 +95,10 @@ Routing:
 Users can:
 - [ ] __10:__ See their username and email
 - [ ] __30:__ Edit their username and email using AJAX. Updating their profile should NOT require a page refresh. Submitting the form on `/users/<USER ID>/edit` page asynchronously updates the profile information. The user remains on the edit page `/users/<USER ID>/edit`.
+
+## Like Button
+- [ ] __25:__ user can click a like button on an album, increasing the total displayed without a page refresh
+- [ ] __15:__ number of likes persists between page refreshes and server restarts
+- [ ] __15:__ users are only able to like an album when logged in
+- [ ] __35:__ each album correctly displays the total number of likes from all users, and users can only like an album once
+- [ ] __10:__ if a user has liked the album they are viewing, a red border is displayed around the like button
